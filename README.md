@@ -20,7 +20,7 @@ and basis set and other options.
 Cartesian coordinates or by the Z-matrix.
 - `Optional additional sections`: Additional input needed for specific job
 types. 
-whereas `Route section` -> the job type (job type keywords), the method, the basic sets (stored internally)
+whereas `Route section` -> the job type (job type keywords), the method, the basic sets (stored internally + polarisation/diffuse functions)
 w
 ## Use gaussian to generate a DFT method forcefield
 ## DFT calculations
