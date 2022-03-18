@@ -1,7 +1,17 @@
 # Gaussian-Tutorials
 This tutorials aim to illustrate how we adjust our forcefield based on DFT methods on Gaussian, therefore, the forcefield will achieve more accuracy than the way simply imported from pdb file (see more at NAMD-Tutorial)
 
-## What is Gaussian? When to use it?
+## Introduction to Gaussian Program
+Gaussian is capable of predicting many properties of molecules and reactions, including the
+following: 
+- Molecular energies and structures 
+- Energies and structures for transition states
+- Bond and Reaction Energies
+- Molecular Orbitals 
+...
+Computations can be carried out in gas phase or solutions, in ground states or excited states
+
+### Gaussian Input Files 
 
 ## Use gaussian to generate a DFT method forcefield
 ## DFT calculations
