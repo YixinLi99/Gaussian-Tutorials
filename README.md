@@ -3,9 +3,7 @@ This tutorials aim to illustrate how we adjust our forcefield based on DFT metho
 
 ## What is Gaussian? When to use it?
 
-## How to wrte a Gaussian conf file?
-
-
+## Use gaussian to generate a DFT method forcefield
 ## DFT calculations
 
 There are many functionals: e.g. B3LYP
@@ -14,6 +12,8 @@ Hybird Functionals Pure Functionals
 #### How to choose which functional to use?
 > https://gaussian.com/dft/
 
+
+## Technically, to write a Gaussian conf file
 ### Commands in Gaussian to run: 
 ```
 g16 job-name
