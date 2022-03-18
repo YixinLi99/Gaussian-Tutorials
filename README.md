@@ -12,7 +12,14 @@ following:
 Computations can be carried out in gas phase or solutions, in ground states or excited states
 
 ### Gaussian Input Files 
-
+- `Link 0 Commands`: Locate and name scratch files. 
+- `Route section (# lines)`: Specify desired calculation type, the method
+and basis set and other options.
+- `Title section`: Brief description of the calculation.
+- `Molecule specification`: Specify molecular system to be studied in
+Cartesian coordinates or by the Z-matrix.
+- `Optional additional sections`: Additional input needed for specific job
+types. 
 ## Use gaussian to generate a DFT method forcefield
 ## DFT calculations
 
