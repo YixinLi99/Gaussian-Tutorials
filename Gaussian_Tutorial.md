@@ -2,8 +2,9 @@
 This tutorials aim to illustrate how we adjust our forcefield based on DFT methods on Gaussian, therefore, the forcefield will achieve more accuracy than the way simply imported from pdb file (see more at NAMD-Tutorial)
 
 useful resources: 
-> https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf (General Introduction)
-> https://www.tau.ac.il/~ephraim/complab.html (Gaussian_Lab: hand-on labs on how to use Gaussian program)
+General Introduction: > https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf 
+GaussianLab: Hand-on labs on how to use Gaussian program: > https://www.tau.ac.il/~ephraim/complab.html  
+The Absolute Beginner Guide for Gaussian: > http://www.ccl.net/cca/documents/dyoung/topics-orig/gaussian.html
 ## Introduction to Gaussian Program
 Gaussian is capable of predicting many properties of molecules and reactions, including the
 following: 
