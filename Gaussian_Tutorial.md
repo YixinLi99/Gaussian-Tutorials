@@ -41,7 +41,7 @@ Hybird Functionals Pure Functionals
 g16 job-name
 g16 <input-file >output-file
 ```
-
+`awk '{ print $3 $4 $5 }' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 >out.txt`
 ### Shell scripts
 
 Example：
