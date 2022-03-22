@@ -44,6 +44,7 @@ g16 <input-file >output-file
 中间空格：`awk '{ print $3 $4 $5 }' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 >out.txt` 
 格式化输出：`awk '{printf("%-10s%s\n",$2,$3)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt`
 `{printf("%-10s%-10s%s\n",$2,$3,$4)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt` where as '%' denotes the $N of rows
+useful links: `https://www.grymoire.com/Unix/Awk.html`
 
 ### Shell scripts
 
