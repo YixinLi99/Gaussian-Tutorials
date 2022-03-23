@@ -32,6 +32,8 @@ whereas `Route section` → the job type (job type keywords), the method, the ba
 There are many functionals: e.g. B3LYP, B3LYPD3, B3LYPD3(BJ)
 Hybird Functionals Pure Functionals 
 ```# Opt B3LYP/6-31G* EmpiricalDispersion=GD3BJ```
+> http://wild.life.nctu.edu.tw/~jsyu/compchem/g09/g09ur/k_dft.htm
+> file:///Users/yixinli/Downloads/Grimme_pdf.pdf
 
 #### How to choose which functional to use?
 > https://gaussian.com/dft/
