@@ -1,7 +1,7 @@
 # Gaussian-Tutorial
 This tutorials aim to illustrate how we adjust our forcefield based on DFT methods on Gaussian, therefore, the forcefield will achieve more accuracy than the way simply imported from pdb file (see more at NAMD-Tutorial)
 
-**useful resource:**  
+**Useful Resource:**  
 General Introduction: > https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf  
 GaussianLab: Hand-on labs on how to use Gaussian program: > https://www.tau.ac.il/~ephraim/complab.html  
 The Absolute Beginner Guide for Gaussian: > http://www.ccl.net/cca/documents/dyoung/topics-orig/gaussian.html
@@ -24,23 +24,24 @@ and basis set and other options.
 Cartesian coordinates or by the Z-matrix.
 - `Optional additional sections`: Additional input needed for specific job
 types. 
-whereas `Route section` -> the job type (job type keywords), the method, the basic sets (stored internally + polarisation/diffuse functions)
-w
+whereas `Route section` → the job type (job type keywords), the method, the basic sets (stored internally + polarisation/diffuse functions)
+
 ## Use gaussian to generate a DFT method forcefield
 ## DFT calculations
 
-There are many functionals: e.g. B3LYP
+There are many functionals: e.g. B3LYP, B3LYPD3, B3LYPD3(BJ)
 Hybird Functionals Pure Functionals 
+```# Opt B3LYP/6-31G* EmpiricalDispersion=GD3BJ```
 
 #### How to choose which functional to use?
 > https://gaussian.com/dft/
-
+see also the tutorials provided by > http://bbs.keinsci.com/forum.php
 
 ## Technically, to write a Gaussian conf file
 ### Commands in Gaussian to run: 
 ```
 g16 job-name
-g16 <input-file >output-file
+g16 <input-file> output-file
 ```
 中间空格：`awk '{ print $3 $4 $5 }' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 >out.txt`  
 格式化输出：`awk '{printf("%-10s%s\n",$2,$3)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt`  
