@@ -42,9 +42,9 @@ Hybird Functionals Pure Functionals
 g16 job-name
 g16 <input-file >output-file
 ```
-中间空格：`awk '{ print $3 $4 $5 }' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 >out.txt` 
-格式化输出：`awk '{printf("%-10s%s\n",$2,$3)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt`
-`{printf("%-10s%-10s%s\n",$2,$3,$4)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt` where as '%' denotes the $N of rows
+中间空格：`awk '{ print $3 $4 $5 }' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 >out.txt`  
+格式化输出：`awk '{printf("%-10s%s\n",$2,$3)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt`  
+`{printf("%-10s%-10s%s\n",$2,$3,$4)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt` where as `%` denotes the $N of rows  
 
 useful links: > https://www.grymoire.com/Unix/Awk.html
 
@@ -52,18 +52,18 @@ useful links: > https://www.grymoire.com/Unix/Awk.html
 
 Example：
 ```
-#!/bin/sh
+%NProcShared=16
+%Mem=32GB
+%chk=AQx.chk
+# Opt B3LYP/6-31G* EmpiricalDispersion=GD3BJ
 
-g16 <<END >water.log
-%Chk=water
-# RHF/6-31G(d)
- 
-water energy
- 
-0  1
-O
-H  1  1.0
-H  1  1.0  2  120.0
- 
+AQx
+
+0 1
+C         -1.7350             -2.3350             0.4720
+C         -0.3560             -2.2360             0.4640
+```
+```
 END
 echo "Job done."
+```
