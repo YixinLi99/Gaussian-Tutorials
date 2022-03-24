@@ -66,6 +66,9 @@ AQx
 C         -1.7350             -2.3350             0.4720
 C         -0.3560             -2.2360             0.4640
 ```
+where **X**:  
+specifies the amount of detail you want to acquire: X = T (terse output);
+X = P (max output); X = N (normal output)
 where **functional**:  
 where **basis sets**:  
 6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence  
