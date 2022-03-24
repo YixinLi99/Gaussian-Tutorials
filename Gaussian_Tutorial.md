@@ -66,7 +66,7 @@ AQx
 C         -1.7350             -2.3350             0.4720
 C         -0.3560             -2.2360             0.4640
 ```
-
+where functional:
 where basis sets:  
 6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence
 6-31G* or 6-31G**: polarisation - 
@@ -77,6 +77,8 @@ f-type functions added on to transition metals
 • (d,p) or ** type : p-type functions added on to Hydrogens, d-type functions
 added on to all other atoms, f-type functions added on to transition metals
 > https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf
+where EmpiricalDispersion:
+it is advised to use it at any occasions
 ```
 END
 echo "Job done."
@@ -100,7 +102,7 @@ module load gaussian/g16.a03-avx
 
 g16 Run.in
 ```
-
+this will generate Run.log file and AQx.chk file  
 if we would like to convert the output *chk.file* to *fchk.file*, try this: [AQx_opt_fchk.sh]
 ```                                                                                                                                        
 #!/bin/sh
