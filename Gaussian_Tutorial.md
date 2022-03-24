@@ -66,8 +66,8 @@ AQx
 C         -1.7350             -2.3350             0.4720
 C         -0.3560             -2.2360             0.4640
 ```
-where functional:  
-where basis sets:  
+where ##functional##:  
+where ##basis sets##:  
 6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence
 6-31G* or 6-31G**: polarisation
 by letting the AOs distort from original shape (get polarized under the influence of
@@ -76,9 +76,9 @@ the surroundings). Polarization can be added as * or (d).
 f-type functions added on to transition metals
 - (d,p) or ** type : p-type functions added on to Hydrogens, d-type functions
 added on to all other atoms, f-type functions added on to transition metals
-> https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf < 
+> https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf  
 
-where EmpiricalDispersion:  
+where ##EmpiricalDispersion##:  
 it is advised to use it at any occasions
 ```
 END
