@@ -76,7 +76,7 @@ the surroundings). Polarization can be added as * or (d).
 f-type functions added on to transition metals
 - (d,p) or ** type : p-type functions added on to Hydrogens, d-type functions
 added on to all other atoms, f-type functions added on to transition metals
-> https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf
+> https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf  
 where EmpiricalDispersion:  
 it is advised to use it at any occasions
 ```
