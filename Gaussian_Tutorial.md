@@ -53,7 +53,7 @@ useful links: > https://www.grymoire.com/Unix/Awk.html
 
 ### Shell scripts
 
-Example：
+Example：[Run.in]
 ```
 %NProcShared=16
 %Mem=32GB
@@ -66,7 +66,58 @@ AQx
 C         -1.7350             -2.3350             0.4720
 C         -0.3560             -2.2360             0.4640
 ```
+
+where basis sets:  
+6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence
+6-31G* or 6-31G**: polarisation - 
+by letting the AOs distort from original shape (get polarized under the influence of
+the surroundings). Polarization can be added as * or (d).
+• (d) or * type : d-type functions added on to atoms other than Hydrogens and
+f-type functions added on to transition metals
+• (d,p) or ** type : p-type functions added on to Hydrogens, d-type functions
+added on to all other atoms, f-type functions added on to transition metals
+> https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf
 ```
 END
 echo "Job done."
 ```
+### Job scripts
+Example: [AQx_opt.sh]
+```
+#!/bin/bash
+
+#SBATCH --nodes=1 --ntasks-per-node=4
+#SBATCH --mem-per-cpu=2000
+#SBATCH --time=0-1000:00:00
+#SBATCH --output=slrum.stdout.txt
+#SBATCH --error=slurm_stderr.txt
+#SBATCH -p X20Cv4
+#SBATCH -J GAUSSIAN
+
+jobname=test
+
+module load gaussian/g16.a03-avx
+
+g16 Run.in
+```
+
+if we would like to convert the output *chk.file* to *fchk.file*, try this: [AQx_opt_fchk.sh]
+```                                                                                                                                        
+#!/bin/sh
+
+#SBATCH --nodes=1 --ntasks-per-node=4
+#SBATCH --mem-per-cpu=2000
+#SBATCH --time=0-1000:00:00
+#SBATCH --output=slrum.stdout.txt
+#SBATCH --error=slurm_stderr.txt
+#SBATCH -p X28Cv4
+#SBATCH -J GAUSSIAN
+
+jobname=test
+
+module load gaussian/g16.a03-avx2
+
+formchk AQx.chk AQx.fchk
+
+echo $PATH
+``` 
