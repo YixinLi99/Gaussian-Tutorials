@@ -124,3 +124,4 @@ formchk AQx.chk AQx.fchk
 
 echo $PATH
 ``` 
+the output *fchk.file* can be visualised via avogadro
