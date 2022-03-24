@@ -68,7 +68,7 @@ C         -0.3560             -2.2360             0.4640
 ```
 where **functional**:  
 where **basis sets**:  
-6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence
+6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence  
 6-31G* or 6-31G**: polarisation
 by letting the AOs distort from original shape (get polarized under the influence of
 the surroundings). Polarization can be added as * or (d).
