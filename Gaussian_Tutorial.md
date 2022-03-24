@@ -49,7 +49,7 @@ g16 <input-file> output-file
 格式化输出：`awk '{printf("%-10s%s\n",$2,$3)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt`  
 `{printf("%-10s%-10s%s\n",$2,$3,$4)}' AQx-2.mol2 | fgrep -w -v -f AQx-2.mol2 > out.txt` where as `%` denotes the $N of rows  
 
-useful links: > https://www.grymoire.com/Unix/Awk.html
+**Useful links**: > https://www.grymoire.com/Unix/Awk.html
 
 ### Shell scripts
 
@@ -66,8 +66,8 @@ AQx
 C         -1.7350             -2.3350             0.4720
 C         -0.3560             -2.2360             0.4640
 ```
-where ##functional##:  
-where ##basis sets##:  
+where **functional**:  
+where **basis sets**:  
 6-31G: 6 GTOs for inner shell, 3 GTOs for inner valence, 1 GTO for outer valence
 6-31G* or 6-31G**: polarisation
 by letting the AOs distort from original shape (get polarized under the influence of
@@ -78,7 +78,7 @@ f-type functions added on to transition metals
 added on to all other atoms, f-type functions added on to transition metals
 > https://barrett-group.mcgill.ca/tutorials/Gaussian%20tutorial.pdf  
 
-where ##EmpiricalDispersion##:  
+where **EmpiricalDispersion**:  
 it is advised to use it at any occasions
 ```
 END
