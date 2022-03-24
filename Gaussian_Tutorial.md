@@ -83,6 +83,8 @@ added on to all other atoms, f-type functions added on to transition metals
 
 where **EmpiricalDispersion**:  
 it is advised to use it at any occasions
+
+therefore, -> `#P Opt B3LYP/6-31G** EmpiricalDispersion=GD3BJ`
 ```
 END
 echo "Job done."
