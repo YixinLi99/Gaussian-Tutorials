@@ -9,7 +9,7 @@ $`E_{total}=E_{bonded}+E_{non-bonded}`$
 $`E_{bonded}=\sum_{bonds} E^{b}+\sum_{angles} E^{a}+\sum_{dihedrals} E^{d}+\sum_{impropers} E^{i}`$  
 $`E_{non-bonded}=\sum_{A>B}(E^{Coulombic Force}_{AB}+E^{van der Waals}_{AB})`$  
 Therefore,  
-ClassI: $`E_{total}=\sum_{bonds} 1/2 k^b{r-r_0)^2 + \sum_{angles} 1/2 k^a(\theta-\theta_0)^2 + \sum_{dihedrals} V/2[1+cos(n\phi-\phi_0)] +\sum_{improper} 1/2 k^i (\psi-\psi)^2 + \sum_{AB} + \sum_{A>B}[{C_{12}}/{r^{12}_{AB}}-{C_6}/{r^6_{AB}}} + \sum_{A>B}{q_A q_B}/{4\pi\epsilon_0 r_AB}`$
+ClassI: $`E_{total}=\sum_{bonds}\dfrac{{1}{2}}k^b{r-r_0)^2 + \sum_{angles}\dfrac{{1}{2}}k^a(\theta-\theta_0)^2 + \sum_{dihedrals}\dfrac{{V}{2}}[1+cos(n\phi-\phi_0)] +\sum_{improper}\dfrac{{1}{2}}k^i(\psi-\psi)^2 + \sum_{AB} + \sum_{A>B}[\dfrac{{C_{12}}{r^{12}_{AB}}-\dfrac{{C_6}{r^6_{AB}}} + \sum_{A>B}\defrac{{q_A q_B}{4\pi\epsilon_0 r_AB}}`$
 
 ## Some General Forcefield
 
