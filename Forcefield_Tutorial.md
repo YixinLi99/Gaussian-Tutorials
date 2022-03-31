@@ -3,7 +3,7 @@
 This tutorial aim to (1) introduce some general forcefields, (2) how to choose the proper forcefield for the system;
 and if the forcefield is not applicable to the system, (3) several methods to construct (e.g. DFT, Machine Learning (QuantumATK))
 
-## Forcefield, E
+## Forcefield, $`E`$
 ```math
 E_{total}=E_{bonded}+E_{non-bonded}
 ```
