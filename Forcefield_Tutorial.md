@@ -6,8 +6,8 @@ and if the forcefield is not applicable to the system, (3) several methods to co
 ## Forcefield, E
 
 $`E_{total}=E_{bonded}+E_{non-bonded}`$  
-$`E_{bonded}=\sum E_{bonds}+\sum E_{angles}+\sum E_{dihedrals}+\sum E_{impropers}`$
-$`E{non-bonded}=E
+$`E_{bonded}=\sum E_{bonds}+\sum E_{angles}+\sum E_{dihedrals}+\sum E_{impropers}`$  
+$`E_{non-bonded}=\sum_{A>B}(E^{electrostatic}_{AB}+E^{van der Waals}_{AB}`$  
 
 ## Some General Forcefield
 
