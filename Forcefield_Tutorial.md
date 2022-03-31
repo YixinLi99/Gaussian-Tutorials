@@ -11,10 +11,7 @@ $`E_{non-bonded}=\sum_{A>B}(E^{Coulombic Force}_{AB}+E^{van der Waals}_{AB})`$
 Therefore,  
 Class I: 
 ```math 
-E_{total}=\sum_{bonds} \frac{1}{2} k^b{r-r_0)^2
-```
-
-$`\sum_{angles} \frac{1}{2} k^a(\theta-\theta_0)^2 + \sum_{dihedrals} \frac{V}{2} [1+cos(n\phi-\phi_0)] + \sum_{improper} \frac{1}{2} k^i(\psi-\psi)^2 + \sum_{AB} + \sum_{A>B} [\frac{C_{12}{r^{12}_{AB}}-\frac{C_6}{r^6_{AB}} + \sum_{A>B} \frac{q_A q_B}{4\pi\epsilon_0 r_AB}`$
+$`E_{total}=\sum_{bonds} \frac{1}{2} k^b{r-r_0}^2 + \sum_{angles} \frac{1}{2} k^a{\theta-\theta_0}^2 + \sum_{dihedrals} \frac{V}{2} [1+cos{n\phi-\phi_0}] + \sum_{improper} \frac{1}{2} k^i{\psi-\psi}^2 + \sum_{AB} + \sum_{A>B} [\frac{C_{12}{r^{12}_{AB}}-\frac{C_6}{r^6_{AB}} + \sum_{A>B} \frac{q_A q_B}{4\pi\epsilon_0 r_AB}`$
 
 ## Some General Forcefield
 
