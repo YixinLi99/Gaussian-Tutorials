@@ -6,7 +6,9 @@ and if the forcefield is not applicable to the system, (3) several methods to co
 ## Forcefield, E
 ```math
 E_{total}=E_{bonded}+E_{non-bonded}  
+
 E_{bonded}=\sum_{bonds} E^{b}+\sum_{angles} E^{a}+\sum_{dihedrals} E^{d}+\sum_{impropers} E^{i}  
+
 E_{non-bonded}=\sum_{A>B}(E^{Coulombic Force}_{AB}+E^{van der Waals}_{AB})  
 ```
 Therefore,  
