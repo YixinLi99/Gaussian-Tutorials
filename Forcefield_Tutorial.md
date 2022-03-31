@@ -4,11 +4,15 @@ This tutorial aim to (1) introduce some general forcefields, (2) how to choose t
 and if the forcefield is not applicable to the system, (3) several methods to construct (e.g. DFT, Machine Learning (QuantumATK))
 
 ## Forcefield, E
-$`E_{total}=E_{bonded}+E_{non-bonded}`$  
-
-$`E_{bonded}=\sum_{bonds} E^{b}+\sum_{angles} E^{a}+\sum_{dihedrals} E^{d}+\sum_{impropers} E^{i}`$   
-
-$`E_{non-bonded}=\sum_{A>B}(E^{Coulombic Force}_{AB}+E^{van der Waals}_{AB})`$  
+```math
+E_{total}=E_{bonded}+E_{non-bonded}
+```
+```math
+E_{bonded}=\sum_{bonds} E^{b}+\sum_{angles} E^{a}+\sum_{dihedrals} E^{d}+\sum_{impropers} E^{i}
+```
+```math
+E_{non-bonded}=\sum_{A>B}(E^{Coulombic Force}_{AB}+E^{van der Waals}_{AB})
+```
 Therefore,  
 Class I:  
 ```math
