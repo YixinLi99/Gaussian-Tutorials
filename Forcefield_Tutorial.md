@@ -11,8 +11,10 @@ $`E_{bonded}=\sum_{bonds} E^{b}+\sum_{angles} E^{a}+\sum_{dihedrals} E^{d}+\sum_
 $`E_{non-bonded}=\sum_{A>B}(E^{Coulombic Force}_{AB}+E^{van der Waals}_{AB})`$  
 Therefore,  
 Class I:  
-$`E_{total}=\sum_{bonds} \frac{1}{2} k^{b}(r-r_0)^2 + \sum_{angles} \frac{1}{2} k^{a} (\theta-\theta_0)^2 + \sum_{dihedrals} \frac{V}{2} [1+cos(n\phi-\phi_s)] + \sum_{improper} \frac{1}{2} k^i (\xi-\xi_0)^2 + \sum_{AB} + \sum_{A>B} [\frac{C_{12}}{r^{12}_{AB}}
--\frac{C_6}{r^6_{AB}}] + \sum_{A>B} \frac{q_A q_B}{4\pi\epsilon_0 r_AB}`$
+```math
+E_{total}=\sum_{bonds} \frac{1}{2} k^{b}(r-r_0)^2 + \sum_{angles} \frac{1}{2} k^{a} (\theta-\theta_0)^2 + \sum_{dihedrals} \frac{V}{2} [1+cos(n\phi-\phi_s)] + \sum_{improper} \frac{1}{2} k^i (\xi-\xi_0)^2 + \sum_{AB} + \sum_{A>B} [\frac{C_{12}}{r^{12}_{AB}}
+-\frac{C_6}{r^6_{AB}}] + \sum_{A>B} \frac{q_A q_B}{4\pi\epsilon_0 r_AB}
+```
 
 ## Some General Forcefield
 
