@@ -7,7 +7,7 @@ and if the forcefield is not applicable to the system, (3) several methods to co
 
 $`E{total}=E{bonded}+E{non-bonded}`$  
 $`E{bonded}=E{bonds}+E{angles}+E{dihedrals}+E{impropers}`$
-
+$`E{non-bonded}=E
 
 ## Some General Forcefield
 
@@ -29,8 +29,8 @@ it will generate the Free Energy (Hartree)
 
 step2: MM method
 
-
-remove the terms with 1,6,7,12; 1,6,7,9; 5,6,7,9; 5,6,7,12 to compare with QM data
+locate [ dihedraltypes ]:
+remove the terms with 1,6,7,12; 1,6,7,9; 5,6,7,9; 5,6,7,12 and rerun to compare with QM data
 therefore the difference will be the intrinsic energy 
 
 then use the fitting codes to 
@@ -40,4 +40,9 @@ where improper dihedral angle (multiple) wiht the func 9 has the following equat
 ```
 using the `curve-fit` function with k1,k2,k3,k4 or k1,k2,k3,k4,k5,k6,k7,k8 
 to see whether it fit the dihedral parameters
-if so, 
+if k1,k2,k3,k4 is fit, then add it to the itp file 
+since: *对于func=9的二面角项，对相同类型如此定义多次会起到累加效果*
+then simply put e.g. 1 6 7 12 k1 0 
+                     1 6 7 12 k2 180
+                     1 6 7 12 k3 0
+                     1 6 7 12 k4 180
