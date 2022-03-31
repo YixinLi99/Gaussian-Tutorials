@@ -5,10 +5,8 @@ and if the forcefield is not applicable to the system, (3) several methods to co
 
 ## Forcefield, E
 
-$`E{total}=E{bonded}+E{non-bonded}`$
+$`E{total}=E{bonded}+E{non-bonded}`$  
 $`E{bonded}=E{bonds}+E{angles}+E{dihedrals}+E{impropers}`$
-
-```
 
 
 ## Some General Forcefield
