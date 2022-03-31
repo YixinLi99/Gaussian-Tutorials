@@ -4,9 +4,9 @@ This tutorial aim to (1) introduce some general forcefields, (2) how to choose t
 and if the forcefield is not applicable to the system, (3) several methods to construct (e.g. DFT, Machine Learning (QuantumATK))
 
 ## Forcefield, E
-```math
-E{total}=E{bonded}+E{non-bonded}
-E{bonded}=E{bonds}+E{angles}+E{dihedrals}+E{impropers}
+
+$`E{total}=E{bonded}+E{non-bonded}`$
+$`E{bonded}=E{bonds}+E{angles}+E{dihedrals}+E{impropers}`$
 
 ```
 
