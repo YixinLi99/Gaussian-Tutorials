@@ -135,7 +135,17 @@ the output *fchk.file* can be visualised via avogadro
 ## Use gaussian to do the Single Point Energy Calculation
 Use GaussView to open the output file generated from the last step, `AQx.fch` and save the last structure as the optimised ones for `AQx.gjf`
 And then change its comments for single point energy calculation (as the static structure, calculate the total energy of the structure), `#p b31yp/def2TZVP emiricaldispersion=gd3bj` (Geom=connectivity means for the connectivity inside the structure, which should appear at the end of gjf file, if not, errors occur).
-Choice of the Basis Set: 
-For HF, DFT: Generally good, 6-311G** 一般3-zeta basis set  
+### Choice of the Basis Set: 
+For HF, DFT普通泛函: 
+Generally good, 6-311G** 一般3-zeta basis set  
 Ideal, def2-TZVP < def2-TZVPP ~ pcseg-2 高档3-zeta  
-Limit, def2-QZVP ~ pcseg-3 4-zeta basis set
+Limit, def2-QZVP ~ pcseg-3 4-zeta basis set  
+同等级组尺寸下使用def/def2, pcseg系列basis set代替Pople basis set可以获得明显更高精度  
+For post-HF, hybird DFT双杂化泛函：
+Rough, 6-311G** < def-TZVP 一般3-zeta basis set  
+Generally good, cc-pVTZ, def2-TZVPP 优质3-zeta basis set  
+Ideal, cc-pVQZ, def2-QZVPP 4-zeta
+Limit, cc-pV5Z 5-zeta  
+高档次后HF方法应该结合高质量基组，方可充分发挥能力
+For Special Purposes, 属性基组
+
