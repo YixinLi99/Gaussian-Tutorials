@@ -26,7 +26,8 @@ Cartesian coordinates or by the Z-matrix.
 types. 
 whereas `Route section` → the job type (job type keywords), the method, the basic sets (stored internally + polarisation/diffuse functions)
 
-## Use gaussian to generate a DFT method forcefield
+
+## Use gaussian to optimise the structure
 ## DFT calculations
 
 There are many functionals: e.g. B3LYP, B3LYPD3, B3LYPD3(BJ)
@@ -130,3 +131,11 @@ formchk AQx.chk AQx.fchk
 echo $PATH
 ``` 
 the output *fchk.file* can be visualised via avogadro
+
+## Use gaussian to do the Single Point Energy Calculation
+Use GaussView to open the output file generated from the last step, `AQx.fch` and save the last structure as the optimised ones for `AQx.gjf`
+And then change its comments for single point energy calculation (as the static structure, calculate the total energy of the structure), `#p b31yp/def2TZVP emiricaldispersion=gd3bj` (Geom=connectivity means for the connectivity inside the structure, which should appear at the end of gjf file, if not, errors occur).
+Choice of the Basis Set: 
+For HF, DFT: Generally good, 6-311G** 一般3-zeta basis set  
+Ideal, def2-TZVP < def2-TZVPP ~ pcseg-2 高档3-zeta  
+Limit, def2-QZVP ~ pcseg-3 4-zeta basis set
