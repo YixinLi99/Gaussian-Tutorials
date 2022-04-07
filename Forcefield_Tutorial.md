@@ -34,19 +34,20 @@ More Compuational Details, see: "有机共轭小分子构建Gromacs程序使用�
 <img width="6832" alt="有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法" src="https://user-images.githubusercontent.com/74641841/162131201-8e26de40-6c04-47b8-8763-05a76ea9d05a.png">
 
 
-step1: QM method 
+**step1: QM method**
 Using GaussView to have a soft scanning of the molecule 
 Then, constraint the dihedral angle 1,6,7,12 to rotate while optimise other parts 
 it will generate the Free Energy (Hartree)
 `struc1_scan.gjf` `struc1_scan.out`
 `traj.trr` `traj.xyz`
 
-step2: MM method
+**step2: MM method**
 
 locate [ dihedraltypes ]:
 remove the terms with 1,6,7,12; 1,6,7,9; 5,6,7,9; 5,6,7,12 and rerun to compare with QM data
 therefore the difference will be the intrinsic energy 
 
+**step3: Fitting**
 then use the fitting codes to 
 where improper dihedral angle (multiple) wiht the func 9 has the following equation:
 ```math
@@ -60,3 +61,6 @@ then simply put e.g. 1 6 7 12 k1 0
                      1 6 7 12 k2 180  
                      1 6 7 12 k3 0  
                      1 6 7 12 k4 180  
+                     
+-OR-  
+use Origin
