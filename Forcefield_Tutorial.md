@@ -29,7 +29,7 @@ E_{total}=\sum_{bonds} \frac{1}{2} k^{b}(r-r_0)^2 + \sum_{angles} \frac{1}{2} k^
 This way it will optimise its non-bonded term performance 
 
 ## Fit its forcefield parameters
-This way it will make sure the MD undergoes will have the same dihedral performance as QM
+This way it will make sure the MD undergoes will have the same dihedral performance as QM  
 More Compuational Details, see: "有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法.pdf"
 
 step1: QM method 
