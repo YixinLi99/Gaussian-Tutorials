@@ -31,6 +31,8 @@ This way it will optimise its non-bonded term performance
 ## Fit its forcefield parameters
 This way it will make sure the MD undergoes will have the same dihedral performance as QM  
 More Compuational Details, see: "有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法.pdf"
+<img width="6832" alt="有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法" src="https://user-images.githubusercontent.com/74641841/162131201-8e26de40-6c04-47b8-8763-05a76ea9d05a.png">
+
 
 step1: QM method 
 Using GaussView to have a soft scanning of the molecule 
