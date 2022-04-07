@@ -65,7 +65,7 @@ then simply put e.g. 1 6 7 12 k1 0
 use Origin
 描述化学键势能函数曲线最好的势函数之一是Morse Potential：
 ```math
-E(r)=D[1-e^{-\alpha(r-r_0)}^2
+E(r)=D[1-e^{-\alpha(r-r_0)}]^2
 ```
 ```math
 \alpha=\sqrt{\frac{k}{2D}
