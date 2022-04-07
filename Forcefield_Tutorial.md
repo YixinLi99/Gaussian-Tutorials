@@ -68,5 +68,5 @@ use Origin
 E(r)=D[1-e^{-\alpha(r-r_0)}]^2
 ```
 ```math
-\alpha=\sqrt{\frac{k}{2D}
+\alpha=\sqrt{\frac{k}{2D}}
 ```
