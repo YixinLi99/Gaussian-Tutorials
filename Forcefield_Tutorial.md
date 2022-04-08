@@ -22,8 +22,8 @@ E_{total}=\sum_{bonds} \frac{1}{2} k^{b}(r-r_0)^2 + \sum_{angles} \frac{1}{2} k^
 
 ## Some General Forcefield
 
-#### AMBER Forcefield 
-
+AMBER Forcefield  
+General AMBER Forcefield (GAFF)   
 
 ## Change itp.file with RESP 
 This way it will optimise its non-bonded term performance 
