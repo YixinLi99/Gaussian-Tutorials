@@ -32,8 +32,6 @@ This way it will optimise its non-bonded term performance
 This way it will make sure the MD undergoes will have the same dihedral performance as QM  
 More Compuational Details, see: "有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法.pdf"
 
-<img width="6832" alt="有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法" src="https://user-images.githubusercontent.com/74641841/162131201-8e26de40-6c04-47b8-8763-05a76ea9d05a.png">
-
 <img width="6576" alt="有机共轭小分子构建Gromacs程序使用的输入文件(包含单个二面⻆拟合)的方法" src="https://user-images.githubusercontent.com/74641841/162440055-c009a7dd-d9e6-47b0-8e8e-cf2a11953cfa.png">
 
 **step1: QM method**
