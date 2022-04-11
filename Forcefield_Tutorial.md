@@ -51,7 +51,7 @@ therefore the difference will be the intrinsic energy
 then use the fitting codes to 
 where improper dihedral angle (multiple) wiht the func 9 has the following equation:
 ```math
-V_d{\phi_{ijkl}=k_{\phi}(1-cos(n\phi+\phi_{s}))  
+V_d(\phi_{ijkl)=k_{\phi}(1-cos(n\phi+\phi_{s}))  
 ```
 using the `curve-fit` function with k1,k2,k3,k4 or k1,k2,k3,k4,k5,k6,k7,k8 to see whether it fit the dihedral parameters  
 if k1,k2,k3,k4 is fit, then add it to the itp file  
